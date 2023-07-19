@@ -32,7 +32,7 @@ public class Main {
         // array of multiple different types
         Number[] numbers = new Number[] {v1, v2, v4, v5, v6, v7};
 
-        // We can call polymorphic methods with an array of a polimorphic type
+        // We can call methods with an array of a polimorphic type
         System.out.println(Arrays.toString(numbers));
         System.out.println(NumberUtils.max(numbers));
         NumberUtils.sort(numbers);

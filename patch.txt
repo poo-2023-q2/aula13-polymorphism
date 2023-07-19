@@ -1,0 +1,95 @@
+diff --git a/README.md b/README.md
+index 5c55bfd..1c764e8 100644
+--- a/README.md
++++ b/README.md
+@@ -1,27 +1,6 @@
+-# Template para projetos de POO no GitHub Codespace
++# Aula 13 - Polimorfismo
+ 
+-* Crie um novo repositório usando o template;
+-* Inicie um codespace a partir do novo repositório;
+-
+-O repositório já possui um projeto Java (sem build system) criado. A documentação a seguir foi gerada automaticamente pelo wizard do VSCode.
+-
+-----
+-
+-## Getting Started
+-
+-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+-
+-## Folder Structure
+-
+-The workspace contains two folders by default, where:
+-
+-- `src`: the folder to maintain sources
+-- `lib`: the folder to maintain dependencies
+-
+-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+-
+-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+-
+-## Dependency Management
+-
+-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
++* `poly_1`: Exemplo básico de tipo polimórfico
++* `poly_2`: Exemplo de tipo polimorfismo com chamadas internas de métodos polimórficos
++* `animais`: Exemplo concreto de uma hierarquia de animais a partir de um tipo polimórfico
++* `numbers`: criação de métodos e estruturas para diferentes tipos utilizando métodos polimórficos
+\ No newline at end of file
+diff --git a/src/animais/Main.java b/src/animais/Main.java
+index 81b2208..960dc0e 100644
+--- a/src/animais/Main.java
++++ b/src/animais/Main.java
+@@ -2,7 +2,7 @@ package animais;
+ 
+ public class Main {
+     /**
+-     * Polimorphic method that prints an animal.
++     * Method that prints an animal.
+      * 
+      * @param a the animal (polymorphic type)
+      */
+@@ -14,7 +14,7 @@ public class Main {
+     }
+ 
+     /**
+-     * Polimorphic method that prints an array of animals
++     * Method that prints an array of animals
+      *
+      * @param animals the array of animals
+      */
+diff --git a/src/numbers/Main.java b/src/numbers/Main.java
+index 34eeafa..5e909d9 100644
+--- a/src/numbers/Main.java
++++ b/src/numbers/Main.java
+@@ -32,7 +32,7 @@ public class Main {
+         // array of multiple different types
+         Number[] numbers = new Number[] {v1, v2, v4, v5, v6, v7};
+ 
+-        // We can call polymorphic methods with an array of a polimorphic type
++        // We can call methods with an array of a polimorphic type
+         System.out.println(Arrays.toString(numbers));
+         System.out.println(NumberUtils.max(numbers));
+         NumberUtils.sort(numbers);
+diff --git a/src/numbers/NumberUtils.java b/src/numbers/NumberUtils.java
+index 7c009b7..e8ee14d 100644
+--- a/src/numbers/NumberUtils.java
++++ b/src/numbers/NumberUtils.java
+@@ -2,7 +2,7 @@ package numbers;
+ 
+ public class NumberUtils {
+     /**
+-     * Polymorphic method that determine the maximum in an array of numbers.
++     * Method that determines the maximum in an array of numbers.
+      * 
+      * @param numbers the array numbers, being Number a polymorphic type
+      * @return the maximum number
+@@ -27,7 +27,7 @@ public class NumberUtils {
+     }
+ 
+     /**
+-     * Polymorphic method that sorts (inline) an array of numbers.
++     * Method that sorts (inline) an array of numbers.
+      * 
+      * @param numbers the array of numbers
+      */

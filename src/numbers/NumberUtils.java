@@ -2,7 +2,7 @@ package numbers;
 
 public class NumberUtils {
     /**
-     * Polymorphic method that determine the maximum in an array of numbers.
+     * Method that determines the maximum in an array of numbers.
      * 
      * @param numbers the array numbers, being Number a polymorphic type
      * @return the maximum number
@@ -27,7 +27,7 @@ public class NumberUtils {
     }
 
     /**
-     * Polymorphic method that sorts (inline) an array of numbers.
+     * Method that sorts (inline) an array of numbers.
      * 
      * @param numbers the array of numbers
      */

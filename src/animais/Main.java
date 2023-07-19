@@ -2,7 +2,7 @@ package animais;
 
 public class Main {
     /**
-     * Polimorphic method that prints an animal.
+     * Method that prints an animal.
      * 
      * @param a the animal (polymorphic type)
      */
@@ -14,7 +14,7 @@ public class Main {
     }
 
     /**
-     * Polimorphic method that prints an array of animals
+     * Method that prints an array of animals
      *
      * @param animals the array of animals
      */
